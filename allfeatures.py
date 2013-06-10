@@ -3,9 +3,9 @@
 from __future__ import print_function
 import os
 def test():
-    os.chdir('/media/pitybea/use/TunnelHough/trainingImages')
+    os.chdir('E:\\TunnelHough\\trainingImages')
     
-    ins = open( "list.txt", "r" )
+    ins = open( "list.lst", "r" )
     array = []
     for line in ins:
         array.append( line.strip() )
@@ -32,7 +32,7 @@ def test():
     
     
     fileposs=open('postions.txt','w')
-    print(len(positions),file=fileposs)
+#    print(len(positions),file=fileposs)
     for pos in positions:
         print(pos,file=fileposs)
     
@@ -40,7 +40,7 @@ def test():
     
     
     fileposs=open('features.txt','w')
-    print(len(features),file=fileposs)
+#    print(len(features),file=fileposs)
     for fea in features:
         print(fea,file=fileposs)
     
