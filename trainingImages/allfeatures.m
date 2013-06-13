@@ -1,4 +1,0 @@
-function allfeatures(lst)
-
-
-end

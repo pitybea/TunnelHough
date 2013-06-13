@@ -16,7 +16,10 @@ def test():
     imagefilename = 'testdata\\frame92.jpg'
 
     img=cv2.imread(imagefilename, 1)
-    cv2.imwrite('testdata\\test.jpg',img)
+    
+    
+    cv2.imshow("img",img);
+    cv2.waitKey (0);
     
   
       

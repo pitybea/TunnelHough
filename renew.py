@@ -17,9 +17,9 @@ def test():
         cmd='cp originalData/frame%s.* testdata/'%(ea)
         print cmd
         os.system(cmd)
-        cmd='cp originalData/frame%s_* testdata/'%(ea)
-        print cmd
-        os.system(cmd)
+        #cmd='cp originalData/frcd ame%s_* testdata/'%(ea)
+        #print cmd
+        #os.system(cmd)
         cmd='cp trainingImages/kmean* testdata/'
         print cmd
         os.system(cmd)

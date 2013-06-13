@@ -1,7 +1,7 @@
 function outputKMeasnsResult()
 load('features.txt');
-i=10;
-while i<121
+i=6;
+while i<32
     [idx,c]=kmeans(features,i,'emptyaction','drop','MaxIter',10000);
     fid=fopen(sprintf('kmeancenter%d.txt',i),'w');
     for j=1:size(c,1)
@@ -14,7 +14,7 @@ while i<121
     fprintf(fid,'%d\n',idx);
         
     fclose(fid);
-    i=i+10;
+    i=i+3;
     i
 end
 end
